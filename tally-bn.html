@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	
+	<title>Tally 02</title>
+	<style type="text/css">
+		.election_box {
+			margin: 10px auto;
+			width: 100%;
+			max-width: 960px;
+			padding: 0;
+			font-family: solaimanLipi, roboto;
+			line-height: 200%;
+			background-color: #fffef2;
+		}
+
+		.election_box .row.header{background-color: #c6d4df;}
+		.election_box .row.header .title {
+			text-align: right;
+			margin: 0;
+			padding: 7px 50px 0px 0px;
+			font-size: 22px;
+			font-weight: normal;
+			background-color: #17557d;
+			color: #fded9f;
+			border-radius: 0 100px 0px 0;
+		}
+		.election_box .variable {
+			margin: 0px;
+			text-align: left;
+			padding: 5px 15px;
+			background-color: #c6d4df;
+			color: #17557d;
+			font-size: 18px;
+		}		
+		.candidates_row { 
+			padding-top: 0px;
+			border-bottom:2px solid #17557d;
+		}
+
+		.candidate_box {
+			text-align: center;
+			font-weight: normal;
+			border-right: 2px solid #8baabe;
+			display:flex;
+			}
+
+		.candidate_box:nth-of-type(3){
+			border-right: none;
+		}
+
+		.seats_box {
+		}
+
+		.candidate_box:last-child .seats_box {
+			border-right: none;
+		}
+	
+		.logo_box img{
+			width: 80px;
+			vertical-align: text-top;
+		}
+
+		.candidate_title {
+			margin: 5px 0px 0px 0px;
+			color: #5d88a4;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.seats_box .seats {
+			margin: 0px 0px 2px 0;
+			color: #f3110f;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.election_box .variable span {
+			font-weight: 600;
+		}
+
+		@media (max-width: 767px) {
+		
+			.election_box .row.header .title {padding:0px;text-align:center;border-radius:0;}
+			.election_box .variable {padding:0px;text-align:center;}
+				.candidates_row_outer:first-of-type {
+					border-right: none;
+				}
+
+				.candidate_box {
+					border-bottom: 1px solid #8baabe;
+				}
+
+					.candidate_box{
+						border-right: none;
+					}
+
+				.logo_box {
+					float: left;
+					margin: 10px;
+					padding: 5px 0 0 0;
+				}
+
+				.seats_box {
+				}
+
+					.seats_box .seats {
+						padding: 15px 0 0 0;
+						font-size: 20px;
+					}
+
+				.candidates_row {
+					margin: 0;
+				}
+
+				.candidate_box:last-child {
+					border-bottom: none;
+				}
+
+
+
+		}
+	</style>
+</head>
+<body>
+
+	
+	
+
+		<div class="container-fluid election_box">
+			<div class="row header ml-0 mr-0">
+				<div class="col-sm-6 col-md-6 title" ><a onclick="redirectToBangla('https://bangla.bdnews24.com/election/cumilla-city-polls-2022/');">Cumilla City Polls 2022</a></div>
+				<div class="col-sm-6 col-md-6 variable" >0 centres out of 105 centres</div>
+			</div>
+			<div class="row">
+					<div class="col-md-12 candidates_row_outer">
+						<div class="row candidates_row   ml-0 mr-0 ">
+
+								<div class="col-sm-12 col-md-4 candidate_box">
+									<div class="logo_box">
+										<img id="imagenew" width="100" src="https://drive.google.com/uc?id=1Ai2MI25EezrDrKuX-MvnTrZ9gIHlrbLO">
+									</div>
+									<div class="seats_box">
+										<div class="candidate_title">সরকার শাহনূর ইসলাম </div>
+										<div class="seats">0 </div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4 candidate_box">
+									<div class="logo_box">
+										<img id="imagenew" width="100" src="https://drive.google.com/uc?id=1qseepYrX3Rs_-a50KuEdiA4OLqb5ygg_">
+									</div>
+									<div class="seats_box">
+										<div class="candidate_title">জায়েদা খাতুন </div>
+										<div class="seats">0 </div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4 candidate_box">
+									<div class="logo_box">
+										<img id="imagenew" width="100" src="https://drive.google.com/uc?id=1TgILrngT-99pry5xijV-JlMJUxizr1Du">
+									</div>
+									<div class="seats_box">
+										<div class="candidate_title">মো. আজমত উল্লা খান </div>
+										<div class="seats">0 </div>
+									</div>
+								</div>
+						
+						</div><!--candidates_row ends-->
+					</div><!--row col-6 ends-->
+			</div><!--row ends-->
+
+
+		</div>
+		<script>
+		function redirectToBangla(url) {              
+			window.top.location.href = url; 
+		}
+		function redirectToEnglish(url) {              
+			window.top.location.href = url; 
+		}
+		</script>
+		
+	</body>
+</html>
