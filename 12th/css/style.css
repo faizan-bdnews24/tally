@@ -1,0 +1,95 @@
+.election_box{
+	max-width:960px;
+	padding: 0;
+	background-color: #fffef2;
+	margin:10px auto;
+	
+	line-height:200%;
+}
+.election_box h4{
+	text-align: center;
+	margin: 05px 0px 10px 0px;
+	padding: 10px 0px 0px 0px;
+	font-size: 28px;
+	font-weight:bold;
+	color: #212b46;
+}
+.candidate_box{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom:5px;
+}
+
+.seats_box{
+	border-right: 1px solid #c69c6c;
+}
+.candidate_box:last-child .seats_box{
+	border-right: none;
+}
+.candidate_image{
+	width: 100px;
+}
+.candidate_title{
+	margin: 5px 0px;
+	color: #222c47;
+	font-size: 24px;
+	display: none;
+}
+.seats_box .seats{
+	margin: 7px 0px;
+	color: #f2110f;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.election_box #variable{
+	margin-left:0;
+	text-align: center;
+	width: auto;
+	padding: 5px 05px;
+	color: #ffffff;
+	background-color: #c69c6c;
+	font-size:18px;
+}
+.election_box #variable span{
+	font-weight:600;
+}
+#election_countdown_sponsor{
+    margin: 0 ;
+    padding: 0 0 0 5px;
+    font-size: 10px;
+    display: inline-flex;
+	border-left: 1px solid #aa8d6b;
+}
+#election_countdown_sponsor img{
+    max-height: 25px;
+    margin:3px 0px 0px 5px;
+}
+@media (max-width: 767px) {
+	.candidate_box{
+		border-bottom: 1px solid #c69c6c;
+	}
+	.logo_box{
+		float:left;
+		margin: 10px;
+		padding: 5px 0 0 0;
+	}
+	.seats_box{
+		border-right: none;
+	}
+	.seats_box .seats{
+		padding: 15px 0 0 0;
+		font-size:60px;
+	}
+	.candidate_box:last-child{
+		border-bottom: none;
+	}
+	#election_countdown_sponsor{
+		margin: 0 auto;
+		text-align: center;
+		border:none;
+	}
+	#election_countdown_sponsor img{
+	
+	}
+}

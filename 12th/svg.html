@@ -1,0 +1,24 @@
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+				  <clipPath id="clipCircle">
+					<circle id="circle" r="50" cx="50" cy="70"/>
+				  </clipPath>
+				  <rect width="100" height="100"  fill="#d8c8b8" clip-path="url(#clipCircle)"/>
+				</svg>
+				
+				
+A pattern will work. You just have to give the <image> a size. Unlike HTML, SVG images default to width and height of zero.
+
+Also, if you want the image to scale with the circle, then you should specify a viewBox for the pattern.
+
+<svg id="graph" width="100%" height="400px">
+
+  <!-- pattern -->
+  <defs>
+    <pattern id="image" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 512 512">
+      <image x="0%" y="0%" width="512" height="512" xlink:href="https://cdn3.iconfinder.com/data/icons/people-professions/512/Baby-512.png"></image>
+    </pattern>
+  </defs>
+    
+  <circle id="sd" class="medium" cx="5%" cy="15%" r="5%" fill="url(#image)" stroke="lightblue" stroke-width="0.5%" />
+</svg>
