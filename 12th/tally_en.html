@@ -1,7 +1,6 @@
 <html>
 
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         .bangla-font {
             font-family: SolaimanLipi, Arial, Helvetica, Verdana, sans-serif
@@ -19,10 +18,12 @@
             line-height: 200%;
         }
 
-        .election_box .row {
-            width: 100%;
+        .election_box .candidate_container {
             margin: 0px;
             padding: 0px;
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
         }
 
         .election_box h4 {
@@ -34,7 +35,7 @@
 			color: #212b46;
 			border-bottom: 1px solid #f0f2f3;
         }
-		.election_box h4 a{color:inherit;}
+		.election_box h4 a{color:inherit;text-decoration:none;}
 		.election_box h4 a:hover{color:#202d52;text-decoration:none;}
 
         .candidate_box {
@@ -49,14 +50,7 @@
 			font-size:24px;
 		}
 
-        .seats_box {
-            border-right: 1px solid #c69c6c;
-        }
-
-        .candidate_box:last-child .seats_box {
-            border-right: none;
-        }
-
+        
         .candidate_image {
             width: 100px;
         }
@@ -68,24 +62,32 @@
             display: none;
         }
 
-        .seats_box .seats {
+        .seats {
             margin: 5px 0px;
-            padding: 10px 0;
+            padding: 10px 60px;
             color: #f2110f;
             font-size: 50px;
             font-weight: bold;
+			border-right: 1px solid #c69c6c;
         }
+		.candidate_box:last-child .seats {
+			border-right: none;
+		}
 
-        .election_box #variable {
+        .bottom_container{
             margin-left: 0;
             text-align: center;
             padding: 5px 05px;
             color: #ffffff;
             background-color: #c69c6c;
             font-size: 18px;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
         }
 
-        .election_box #variable span {
+        .bottom_container #seat_counter {width:75%;}
+        .bottom_container span {
             font-weight: 600;
         }
 
@@ -93,17 +95,20 @@
             margin: 0;
             padding: 0px;
             font-size: 12px;
-            display: inline-flex;
+			width:24%;
         }
 
         #election_countdown_sponsor img {
             max-height: 25px;
-            margin: 3px 0px 0px 5px;
+            margin: 0px 0px 0px 8px;
+			vertical-align:middle;
         }
 
         @media (max-width: 767px) {
+			 .election_box .candidate_container{flex-direction:column;}
             .candidate_box {
-				margin:10px auto;
+				margin:10px 0;
+				padding:0 10px;
                 border-bottom: 1px solid #c69c6c;
 				display: flex;
 				justify-content: space-between;
@@ -112,19 +117,20 @@
                 margin: 0px;
                 padding: 5px 0 0 0;
             }
-            .seats_box {
-                border-right: none;
-            }
-            .seats_box .seats {
+            .seats {
                 padding: 0;
                 font-size: 30px;
+				border-right: none;
             }
             .candidate_box:last-child {
                 border-bottom: none;
             }
+			.bottom_container{flex-direction:column;align-content:center;}
+			.bottom_container #seat_counter{width:auto;}
             #election_countdown_sponsor {
-                margin: 5px 0 0 80px;
-                display: flex;
+                width: auto;
+				height: 30px
+                
             }
             #election_countdown_sponsor img {}
         }
@@ -132,55 +138,32 @@
 </head>
 
 <body>
-    <div class="container-fluid election_box bangla-font">
-        <h4> <a href="https://bdnews24.com/12th-parliamentary-election">12TH PARLIAMENTARY ELECTION</a>
-        </h4>
-        <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-3 candidate_box">
-                <div class="logo_box">Awami League</div>
-                <div class="seats_box">
-
-                    <div class="seats"> 265</div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 candidate_box">
-                <div class="logo_box">Jatiya Party</div>
-                <div class="seats_box">
-
-                    <div class="seats"> 22</div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 candidate_box">
-                <div class="logo_box">Independents</div>
-                <div class="seats_box">
-
-                    <div class="seats"> 8</div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 candidate_box">
-                <div class="logo_box">Others</div>
-                <div class="seats_box">
-
-                    <div class="seats" id="seat4"> 4</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="row" id="variable">
-            <div class="col-xs-12 col-sm-10 col-md-10">Results from<span style="color:#f2110f"> 298 </span>of<span style="color:#f2110f"> 300 </span>seats
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-md-offset-0" id="election_countdown_sponsor">
-                Sponsored by<img src="./logos/sponsor_logo.svg">
-            </div>
-
-
-
-
-        </div>
-    </div>
+<div class="election_box english-font">
+		<h4> <a href="https://bdnews24.com/12th-parliamentary-election">12TH PARLIAMENTARY ELECTION </a>
+		</h4>
+		<div class="candidate_container">
+			<div class="candidate_box">
+				<div class="logo_box">Awami League</div>
+				<div class="seats"> 250</div>
+			</div>
+			<div class="candidate_box">
+				<div class="logo_box">Jatiya Party</div>
+				<div class="seats"> 25</div>
+			</div>
+			<div class="candidate_box">
+				<div class="logo_box">Independents</div>
+				<div class="seats">79</div>
+			</div>
+			<div class="candidate_box">
+				<div class="logo_box">Others</div>
+				<div class="seats" id="seat4">44</div>
+			</div>
+		</div>
+		<div class="bottom_container" id="variable">
+			<div class="" id="seat_counter">Results from<span style="color:#f2110f"> 290 </span>of<span style="color:#f2110f"> 300 </span> seats</div>
+			<div class="" id="election_countdown_sponsor">Sponsored by<img src="./logos/sponsor_logo.svg"></div>
+		</div>
+	</div>
 	
 <script>
 var cookieValue = document.getElementById('seat4').innerHTML;
