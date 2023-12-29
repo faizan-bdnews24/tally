@@ -1,0 +1,8 @@
+{
+	
+		"Awami League"	:	100,
+		"Jatiya Party"	:	102,
+		"Independents"	:	20,
+		"Others"		:	300
+	
+}
