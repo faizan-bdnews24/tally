@@ -1,4 +1,4 @@
-echo %DATE% %TIME% >> ../../logs/tally/backup.log
+echo %DATE% %TIME% >> ../logs/backup.log
 echo adding
 git add .
 echo commit
