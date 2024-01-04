@@ -1,7 +1,18 @@
 <html>
 
 <head>
-    <style type="text/css">
+     <style type="text/css">
+	
+	.OEtoD {
+	padding: 0;
+	overflow: hidden;
+	border: none;
+    }
+	div#ec_box_desktop{margin:0 auto;width:960px;}
+	div#ec_box_desktop img {width:960px;}
+    div#ec_box_mobile {
+        display: none;
+    }
         .bangla-font {
             font-family: SolaimanLipi, Arial, Helvetica, Verdana, sans-serif
         }
@@ -14,12 +25,12 @@
             max-width: 960px;
             padding: 0;
             background-color: #fffef2;
-            margin: 10px auto;
+            margin: -20px auto 10px ;
             line-height: 200%;
         }
 
         .election_box .candidate_container {
-            margin: 0px;
+            margin: -20px 0 0 0;
             padding: 0px;
 			display:flex;
 			flex-wrap: wrap;
@@ -27,6 +38,7 @@
         }
 
         .election_box h4 {
+			display:none;
 			margin: 5px 0px 10px 0px;
 			padding: 10px 0px 5px 0px;
 			text-align: center;
@@ -106,6 +118,20 @@
         }
 
         @media (max-width: 767px) {
+		div#ec_box_mobile {
+			margin: 20px auto;
+			display: block;
+			text-align:center;
+			background-color:#fffef2;
+        }
+		div#ec_box_mobile img{
+			width:380px;
+		}
+        div#ec_box_desktop {
+            display: none;
+        }
+		
+			.election_box{margin-top: -40px;}
 			.election_box h4{font-size:22px;}
 			 .election_box .candidate_container{flex-direction:column;}
             .candidate_box {
@@ -141,28 +167,43 @@
 
 <body>
 
-	<div class="election_box bangla-font">
-		<h4> <a href="https://bangla.bdnews24.com/12th-parliamentary-election">দ্বাদশ সংসদ নির্বাচন </a></h4>
+<div id="ec_box_desktop"> 
+	<a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election">
+		<img src="https://gumlet.assettype.com/bdnews24/2023-12/3a8afb1e-59c6-4618-a2f4-21f868ae432c/ed_12th_national_election_desktop.png"> 
+	</a>    
+</div>
+<div id="ec_box_mobile">     
+	<a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election"> 
+		<img src="https://welcome.bdnews24.com/banners/12th_national_election_mobile.png"> 
+	</a>
+</div>
+
+
+<!--tally-->
+
+	<div class="election_box english-font">
+		<h4> <a href="https://bdnews24.com/12th-parliamentary-election">12TH PARLIAMENTARY ELECTION </a>
+		</h4>
 		<div class="candidate_container">
 			<div class="candidate_box">
-				<div class="logo_box">আওয়ামী লীগ</div>
-				<div class="seats"> ২৬৫</div>
+				<div class="logo_box">Awami League</div>
+				<div class="seats"> 250</div>
 			</div>
 			<div class="candidate_box">
-				<div class="logo_box">জাতীয় পার্টি</div>
-				<div class="seats"> ২২</div>
+				<div class="logo_box">Jatiya Party</div>
+				<div class="seats"> 25</div>
 			</div>
 			<div class="candidate_box">
-				<div class="logo_box">স্বতন্ত্র</div>
-				<div class="seats"> ৮৮</div>
+				<div class="logo_box">Independents</div>
+				<div class="seats">790</div>
 			</div>
 			<div class="candidate_box">
-				<div class="logo_box">অন্যান্য</div>
-				<div class="seats" id="seat4"> ৪৪৮</div>
+				<div class="logo_box">Others</div>
+				<div class="seats" id="seat4">44</div>
 			</div>
 		</div>
 		<div class="bottom_container" id="variable">
-			<div class="seat_counter"> <span>৩০০</span> আসনের মধ্যে <span> ২৯৯</span> আসনের ফলাফল</div>
+			<div class="seat_counter">Results from<span> 290 </span>of<span> 300 </span> seats</div>
 			<div class="election_countdown_sponsor">Sponsored by<img src="./logos/sponsor_logo.svg"></div>
 		</div>
 	</div>
