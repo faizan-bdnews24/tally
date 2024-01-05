@@ -1,13 +1,14 @@
 <div id="ec_box_desktop"> 
-	<a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election">
-		<img src="https://gumlet.assettype.com/bdnews24/2023-12/3a8afb1e-59c6-4618-a2f4-21f868ae432c/ed_12th_national_election_desktop.png"> 
+	<a id="banner" href="https://bdnews24.com/12th-parliamentary-election">
+		<img src="https://demo.bd24.com.bd/12th/images/tally_banner_desktop_en.png"> 
 	</a>    
 </div>
 <div id="ec_box_mobile">     
-	<a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election"> 
-		<img src="https://welcome.bdnews24.com/banners/12th_national_election_mobile.png"> 
+	<a id="banner" href="https://bdnews24.com/12th-parliamentary-election"> 
+		<img src="https://demo.bd24.com.bd/12th/images/tally_banner_mobile_en.png"> 
 	</a>
 </div>
+
 
 
 <!-------------------------insert seperately-------------------------------->
