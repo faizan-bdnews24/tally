@@ -1,0 +1,36 @@
+<style>
+    div.top-sticky-ad-wrapper {
+        display: none !important;
+    }
+
+    .OEtoD {
+        padding: 0;
+        overflow: hidden;
+        border: none;
+    }
+
+    div[data-test-id="opinion-widget"] iframe {
+        border: none;
+    }
+
+    .arr--responsive-hero-image:after {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent 50%, transparent) !important;
+    }
+</style>
+<style>
+    div#ec_box_mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        div#ec_box_mobile {
+            margin: 20px auto;
+            display: block;
+        }
+        div#ec_box_desktop {
+            display: none;
+        }
+    }
+</style>
+<div id="ec_box_desktop"> <a id="banner" href="https://bdnews24.com/12th-parliamentary-election"> <img src="https://external.bdnews24.com.bd/banners/22-12-2023/12th_national_election_desktop_en.png" /> </a> </div>
+<div id="ec_box_mobile"> <a id="banner" href="https://bdnews24.com/12th-parliamentary-election"> <img src="https://external.bdnews24.com.bd/banners/22-12-2023/12th_national_election_mobile_en.png" /> </a> </div>
