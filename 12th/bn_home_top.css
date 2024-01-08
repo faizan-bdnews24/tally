@@ -29,6 +29,34 @@
         }
     }
 </style>
+
+<style>
+.liveVideoIframe{text-align:center}
+div.livesubheadline{margin:10px;}
+@media (min-width: 1400px){
+	div[data-test-id=news-paper-component] iframe {
+		width: 540px;
+		height: 350px;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1399px){
+	div[data-test-id="news-paper-component"] iframe{
+		width:460px;
+		height:300px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 768px){
+	
+}
+@media (max-width: 767px){
+	div[data-test-id=news-paper-component] iframe {
+		width: 100%;
+		height: 280px;
+	}
+}
+</style>
+
+
 <style>
     div#ec_box_mobile {
         display: none;
@@ -46,5 +74,6 @@
 </style>
 <div id="ec_box_desktop"> <a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election"> <img src="https://gumlet.assettype.com/bdnews24/2023-12/3a8afb1e-59c6-4618-a2f4-21f868ae432c/ed_12th_national_election_desktop.png" /> </a> </div>
 <div id="ec_box_mobile">
-    <a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election"> <img src="https://welcome.bdnews24.com/banners/12th_national_election_mobile.png" /> </a> </div>
+    <a id="banner" href="https://bangla.bdnews24.com/12th-parliamentary-election"> <img src="https://welcome.bdnews24.com/banners/12th_national_election_mobile.png" /> </a> 
+	</div>
 <div id="custom_ad"> <a target="_blank" href="https://www.facebook.com/KohinoorChemical"> <img src="https://welcome.bdnews24.com/rectangle/kohinoor/images/beautina-300x250.jfif" /> </a> </div>
